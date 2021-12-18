@@ -13,6 +13,8 @@ import Error from "./Error";
 
 export default function Appointment(props) {
 
+  // Declaration for all our possible modes. Renders different components + props depending on 
+  // the current mode at render.
   const EMPTY = "EMPTY";
   const SHOW = "SHOW";
   const CREATE = "CREATE";
@@ -23,10 +25,13 @@ export default function Appointment(props) {
   const ERROR_SAVE = "ERROR_SAVE"
   const ERROR_REMOVE = "ERROR_REMOVE"
 
+  // Our functions for the mode state that lets us navigate through different modes.
   const { mode, transition, back } = useVisualMode(
     props.interview ? SHOW : EMPTY
   );
-
+  
+  // Save function allows the user to save and delete appointments. Works with the Application.js
+  //(bookInterview/cancelInterview functions) and the Form.js(Inputted name/interviewer data) to work.
   function save(name, interviewer) {
     
     const interview = {
@@ -50,6 +55,7 @@ export default function Appointment(props) {
       .catch(error => transition(ERROR_REMOVE, true));
   }
 
+  // render for Appointment
   return (
     <article className="appointment">
       <Header time={props.time}/>

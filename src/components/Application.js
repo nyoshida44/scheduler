@@ -8,6 +8,8 @@ import DayList from "./DayList";
 import Appointment from "components/Appointment";
 
 export default function Application(props) {
+
+  // Custom hooks and fuctions imported from useApplicationData.
   const {
     state,
     setDay,
@@ -31,7 +33,8 @@ export default function Application(props) {
       );
     }
   );
-
+  
+  // render for the entire appplication (Appointment + Daylist components)
   return (
     <main className="layout">
       <section className="sidebar">

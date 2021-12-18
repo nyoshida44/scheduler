@@ -26,27 +26,27 @@ const interviewer = {
 
 describe("Appointment", () => {
 
-  it("renders without crashing", () => {
+  it("Application renders without crashing", () => {
     render(<Application />);
   });
 
-  it("renders without crashing", () => {
+  it("Appointment renders without crashing", () => {
     render(<Appointment />);
   });
 
-  it("renders without crashing", () => {
+  it("Confirm renders without crashing", () => {
     render(<Confirm />);
   });
 
-  it("renders without crashing", () => {
+  it("Empty renders without crashing", () => {
     render(<Empty />);
   });
 
-  it("renders without crashing", () => {
+  it("Error renders without crashing", () => {
     render(<Error />);
   });
 
-  it("renders without crashing", () => {
+  it("Form renders without crashing", () => {
     render(<Form 
       student={"Nick Yoshida"}
       interviewer={1}
@@ -54,18 +54,18 @@ describe("Appointment", () => {
     />);
   });
 
-  it("renders without crashing", () => {
+  it("Header renders without crashing", () => {
     render(<Header />);
   });
 
-  it("renders without crashing", () => {
+  it("Show renders without crashing", () => {
     render(<Show 
       student={"Lydia Miller-Jones"} 
       interviewer={interviewer}
     />);
   });
 
-  it("renders without crashing", () => {
+  it("Status renders without crashing", () => {
     render(<Status />);
   });
 

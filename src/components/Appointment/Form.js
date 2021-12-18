@@ -6,10 +6,12 @@ import InterviewerList from "components/InterviewerList";
 
 export default function Form(props) {
 
+  // useState to store student name and chosen interviewer in state.
   const [student, setStudent] = useState(props.student || "");
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
   const [error, setError] = useState("");
 
+  // Clears and resets form after the cancel button is clicked.
   function reset() {
     setStudent("");
     setInterviewer(null);
@@ -20,6 +22,7 @@ export default function Form(props) {
     props.onCancel();
   }
 
+  // Ensures that the student name is not blank or otherwise raises an error.
   function validate() {
     if (student === "") {
       setError("Student name cannot be blank");
@@ -30,6 +33,7 @@ export default function Form(props) {
     props.onSave(student, interviewer);
   }
 
+  // render for Form
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">

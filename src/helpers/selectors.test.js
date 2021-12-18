@@ -1,5 +1,8 @@
 import { getAppointmentsForDay, getInterviewersForDay, getInterview } from "helpers/selectors";
 
+// Jest tests to ensure that our selectors are properly working and returning data of the correct
+// format that the React Components need.
+
 const state = {
   days: [
     {

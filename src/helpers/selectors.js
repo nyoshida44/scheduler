@@ -1,3 +1,6 @@
+// Selectors are functions that manipulate the data retrieved from axios to be returned
+// in proper format to be used and acccesed as props by our React components.
+
 export function getAppointmentsForDay(state, day) {
   let appointmentsArray;
   let returnArray = [];
