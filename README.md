@@ -1,8 +1,21 @@
 # Interview Scheduler
+Interview Scheduler by Lighthouse Labs and Nick Yoshida. Allows a user to view, book and delete an
+appointment with an interviewer/mentor. A web app built to learn the basics of building a front end
+with React.
 
 ## Setup
 
 Install dependencies with `npm install`.
+
+Dependencies:
+ - axios 0.24.0
+ - classnames 2.2.6
+ - normalize.css 8.0.1
+ - react 16.9.0
+ - react-dom 16.9.0
+ - react-scripts 3.0.0
+
+Run with SchedulerAPI: https://github.com/nyoshida44/scheduler-api for axios data.
 
 ## Running Webpack Development Server
 
@@ -21,3 +34,17 @@ npm test
 ```sh
 npm run storybook
 ```
+
+## Running Cypress Tests
+
+```sh
+npm run cypress
+```
+
+## Screenshots
+
+![At Launch]()
+![Create an Appointment]()
+![Updated Page with New Appointment]()
+![Delete an Appointment]()
+!["Updated page with deleted appointment"]()
