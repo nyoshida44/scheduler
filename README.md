@@ -43,8 +43,8 @@ npm run cypress
 
 ## Screenshots
 
-![At Launch]()
-![Create an Appointment]()
-![Updated Page with New Appointment]()
-![Delete an Appointment]()
-!["Updated page with deleted appointment"]()
+![At Launch](https://github.com/nyoshida44/scheduler/blob/master/docs/start.png)
+![Create an Appointment](https://github.com/nyoshida44/scheduler/blob/master/docs/form.png)
+![Updated Page with New Appointment](https://github.com/nyoshida44/scheduler/blob/master/docs/create.png)
+![Delete an Appointment](https://github.com/nyoshida44/scheduler/blob/master/docs/delete.png)
+!["Updated page with deleted appointment"](https://github.com/nyoshida44/scheduler/blob/master/docs/gone.png)
